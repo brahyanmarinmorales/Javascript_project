@@ -209,7 +209,7 @@ console.log(list)*/
 
 // JS 3 Activty 5
 
-let data=Number(prompt("Enter a number from 1 to 10"))
+/*let data=Number(prompt("Enter a number from 1 to 10"))
 let list
 while(data!=0){
     switch(data){
@@ -249,4 +249,4 @@ while(data!=0){
 
     data=Number(prompt("Continue with the sequence: "))
 
-}
+}*/
