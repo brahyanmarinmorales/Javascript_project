@@ -250,3 +250,46 @@ while(data!=0){
     data=Number(prompt("Continue with the sequence: "))
 
 }*/
+
+// JS 4 Activty 1
+
+
+/*function entrance(){
+    return prompt("Enter you favorite number: ");
+}
+
+function process(value){
+    return "The number you enter is "+value
+}
+
+function output(value){
+    console.log(value);
+}
+
+output(process(entrance()))*/
+
+// JS 4 Activity 2
+
+/*function round(value){
+    return Math.round(value)
+}
+
+for (let index=0;index<5;index+=1){
+    let data = prompt("Enter a number: ");
+    document.write(round(data));
+
+}*/
+
+// JS 4 Activity 3
+
+/*function tax(price, percentage){
+    return price +((price*percentage)/100)
+}
+
+for (let index = 0; index < 5; index+=1){
+    let result = tax(Number(prompt("Enter the price: ")),Number(prompt("Enter the percentage: ")))
+
+    console.log(result)
+}*/
+
+
