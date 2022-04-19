@@ -47,33 +47,77 @@ while(data!="ESC"){
 
 //Simulador interativo
 
-/*let login_email= prompt("Enter your email address: ")
+let login_email= prompt("Enter your email address: ")
 let passcode= Number(prompt("Enter your password: "))
-let room_number
 
 const PASS1=1
 const room_type1="Beautiful Studio"
 const room_type2="Deluxe 1BD Apartment"
 const room_type3="Luxurious 2BD Apartment"
 
+let type1=0
+let type2=0
+let type3=0
+
+
+
+const HSK1="Dinora"
+const HSK2="Julieta"
+const HSK3="Brenda"
+
 
 if (passcode===PASS1){
     confirm("Welcome to the HSK report, Are you planning to create a new one?")
 
     if(true){
-
-        while (room_number!="done"){ 
-            room_number=prompt("Room Number: ")
-            console.log(room_number)
-            room_type_verification(room_number.charAt(0))
-        }   
+        let room_number=prompt("Room Number: ")
+        HSK_report(room_number)
     }
 }else{
     document.write("Password is incorrect. Try one more time")
 }
 
+function HSK_report(room_number){
 
-function room_type_verification (room){ 
+    while (room_number!="done"){
+        switch (room_number.charAt(0)){
+            case "1":
+                if (type1<4){ 
+                document.write(" " + room_number + " " + HSK1 + " ");
+                }else{
+                    document.write(" " + room_number + " " + room_type1 + " " + " No HSK assigned")
+                }
+                type1+=1
+                break;
+            case "2":
+                if (type2<3){ 
+                    document.write(" " + room_number + " " + HSK2 + " ");
+                    }else{
+                        document.write(" " + room_number + " " + room_type2 + " " + " No HSK assigned")
+                    }
+                    type2+=1
+                    break;
+            case "3":
+                if (type3<3){ 
+                    document.write(" " + room_number + " " + HSK3 + " ");
+                    }else{
+                        document.write(" " + room_number + " " + room_type3 + " " + " No HSK assigned")
+                    }
+                    type3+=1
+                    break;
+            default: 
+                document.write(" " + "This apartment does not exist" + " ")
+                break
+        }
+        room_number=prompt("Room Number: ")
+    }
+}
+
+
+
+
+
+/*function room_type_verification (room){ 
     if(room==1){
         room_type1
         document.write(" " + room_number + " " + room_type1 + " ")
@@ -89,16 +133,7 @@ function room_type_verification (room){
     }
 }*/
 
-const hsk = "Dinora";
-let type="Beautiful Studio"
-let room_number=102
 
-if (type=="Beautiful Studio") {
-    for (let i = 0; i < 4; i += 1){
-        document.write(" " + hsk + " " + room_number)
-    }
-    
-}
 
 
 
