@@ -292,4 +292,75 @@ for (let index = 0; index < 5; index+=1){
     console.log(result)
 }*/
 
+// JS 4 Activity 4
+
+/*const DOLLAR_PRICE = 3784.20;
+
+/*const cop_vs_usd = (cop) => cop / DOLLAR_PRICE
+const usd_vs_cop = (usd) => usd * DOLLAR_PRICE*/
+
+/*function cop_vs_usd (usd) {
+    return usd / DOLLAR_PRICE;
+}
+
+function usd_vs_cop (cop) {
+    return cop * DOLLAR_PRICE;
+}
+
+let seleccion = prompt ("Select your convertion \n 1 - COP to USD \n 2 - USD to COP " )
+let value = prompt ("value");
+
+switch (seleccion) {
+    case "1":
+        alert (cop_vs_usd (value))
+        break;
+    case "2":
+        alert (usd_vs_cop(value))
+        break;
+    default:
+        break;
+}*/
+
+
+// JS 4 Activity 5
+
+/*function validation (chain){
+    return chain != " ";
+}
+let enter = prompt ("Enter a chain: ")
+while (enter!= "ESC" ) {
+    alert (validation(enter));
+    enter = prompt ("Enter a chain: ")
+}*/
+
+
+// JS 5 Activity 1
+
+/*class store{ 
+
+    constructor (name, address, owner, currency){
+        this.name = name;
+        this.address = address;
+        this.owner = owner;
+        this.currency = currency;
+    }
+}
+const store1 = new store("Miscelanea el Samana","Parque","Milena","Pesos")
+const store2 = new store("Granero la culebra","calle del comercio","Carlos Ivan","Pesos")
+const store3 = new store("Confecciones C A","5 Estrellas","Carlos Andrey","Pesos")
+
+console.log(store1);
+
+console.log(store2);
+
+console.log(store3);*/
+
+
+
+
+
+
+
+
+
 
